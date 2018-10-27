@@ -1,0 +1,56 @@
+{
+    "service": {
+        "prefix": "xne-api",
+        "name": "xne",
+        "maxRetries": 3,
+        "host": "localhost",
+        "version": "0.0.1",
+        "port": 40001
+    },
+    "mongo": {
+        "hostUrl": "127.0.0.1:27017",
+        "dbName": "xne"
+    },
+    "mysql": {
+        "host": null,
+        "db": "bngj",
+        "username": null,
+        "password": null,
+        "options": {
+            "dialect": "mysql",
+            "port": 3306,
+            "logging": false,
+            "replication": {
+                "read": [{
+                    "host": "192.168.18.36",
+                    "username": "blockchain",
+                    "password": "blockchain2017!"
+                }],
+                "write": {
+                    "host": "192.168.18.36",
+                    "username": "blockchain",
+                    "password": "blockchain2017!"
+                }
+            },
+            "pool": {
+                "maxConnections": 20,
+                "maxIdleTime": 30000,
+                "max": 20,
+                "min": 0,
+                "idle": 20000,
+                "acquire": 20000
+            }
+        }
+    },
+    "redis": {
+        "host": "localhost",
+        "port": 6379,
+        "family": 4,
+        "password": "auth",
+        "db": 0
+    },
+    "logConfig": {
+        "serviceName": "xne-express",
+        "filePath": "../logs/"
+    }
+}
