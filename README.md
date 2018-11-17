@@ -19,13 +19,13 @@
 
  > * 脚手架介绍
    
-    [https://swagger.io/]
-    [intro](https://www.jianshu.com/p/8ddd692af91f)
-    [express](https://expressjs.com/)
+   [swagger](https://swagger.io/)
+   [intro](https://www.jianshu.com/p/8ddd692af91f)
+   [express](https://expressjs.com/)
  
-    [mongo](http://www.cnblogs.com/zhongweiv/p/mongoose.html)
-    [redis](https://redis.io/)
-    [winston](https://www.jianshu.com/p/e71f727c7b32)
+   [mongo](http://www.cnblogs.com/zhongweiv/p/mongoose.html)
+   [redis](https://redis.io/)
+   [winston](https://www.jianshu.com/p/e71f727c7b32)
 
  > * 数据库
 ```
