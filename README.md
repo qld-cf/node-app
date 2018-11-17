@@ -16,7 +16,7 @@
     全局安装pm2 : npm i pm2 -g
     进入xne-express 运行start.bat或start.sh（可调整开发，生产环境和端口）
     或者直接运行命令查看日志：
-    pm2 start app.js --name xne-express --watch && pm2 log 
+    run：cd xne-express && pm2 start app.js --name xne-express --watch && pm2 log 
 
 ```
 
