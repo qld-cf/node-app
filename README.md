@@ -5,7 +5,10 @@
     npm
     脚手架内需要install和link,已写入bat和sh
     windows：运行bat文件,先运行install文件后link
-    linux或macos： 运行sh（如果sh无法运行，需要更新权限chmod 777 ./xx.sh）
+    linux或macos： 进入目录，运行sh
+    first-run: ./npminstall.sh
+    next-run: ./npmlink.sh
+    （如果sh无法运行，需要更新权限chmod 777 ./xx.sh）
 ```
 
  > * 运行
@@ -13,7 +16,7 @@
     全局安装pm2 : npm i pm2 -g
     进入xne-express 运行start.bat或start.sh（可调整开发，生产环境和端口）
     或者直接运行命令查看日志：
-    cd xne-express &&pm2 start app.js --name xne-express --watch && pm2 log 
+    pm2 start app.js --name xne-express --watch && pm2 log 
 
 ```
 
