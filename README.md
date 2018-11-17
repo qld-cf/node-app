@@ -5,7 +5,7 @@
     npm
     脚手架内需要install和link,已写入bat和sh
     windows：运行bat文件,先运行install文件后link
-    linux或macos： 运行sh（如果sh无法运行，需要更新权限chmod 777 ./xx.sh）
+    linux或macos： 运行sh（如果sh无法运行，需要更新权限chmod 777 ./xx.sh）
 ```
 
  > * 运行
@@ -20,7 +20,7 @@
 
  > * 脚手架介绍
 ```
-    基于swagger - API文档框架，一款REST APIs文档生成工具
+    基于swagger - API文档框架，一款REST APIs文档生成工具
     [https://swagger.io/]
     [https://www.jianshu.com/p/8ddd692af91f]
     express  node.js框架
