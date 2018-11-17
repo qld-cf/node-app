@@ -18,20 +18,15 @@
 ```
 
  > * 脚手架介绍
-```
-    基于swagger - API文档框架，一款REST APIs文档生成工具
+   
     [swagger](https://swagger.io/)
     [intro](https://www.jianshu.com/p/8ddd692af91f)
-    express  node.js框架
     [express](https://expressjs.com/)
-    mongoose 一款m对ongodb进行便捷操作的对象模型工具
+ 
     [mongo](http://www.cnblogs.com/zhongweiv/p/mongoose.html)
-    redis 一个把结构化的数据放在内存中的一个存储系统，你可以把它作为数据库，缓存和消息中间件来使用
     [redis](https://redis.io/)
-    winston node.js日志库
     [winston](https://www.jianshu.com/p/e71f727c7b32)
 
-```
  > * 数据库
 ```
     mongodb、mysql、redis
