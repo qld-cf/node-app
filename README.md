@@ -12,25 +12,24 @@
 ```
     全局安装pm2 : npm i pm2 -g
     进入xne-express 运行start.bat或start.sh（可调整开发，生产环境和端口）
-    或者直接运行命令：
-    cd xne-express &&pm2 start app.js --name xne-express --watch && pm2 log
-    安装好依赖，开箱即用
+    或者直接运行命令查看日志：
+    cd xne-express &&pm2 start app.js --name xne-express --watch && pm2 log 
 
 ```
 
  > * 脚手架介绍
 ```
     基于swagger - API文档框架，一款REST APIs文档生成工具
-    [https://swagger.io/]
-    [https://www.jianshu.com/p/8ddd692af91f]
+    [swagger](https://swagger.io/)
+    [intro](https://www.jianshu.com/p/8ddd692af91f)
     express  node.js框架
-    [https://expressjs.com/]
+    [express](https://expressjs.com/)
     mongoose 一款m对ongodb进行便捷操作的对象模型工具
-    [http://www.cnblogs.com/zhongweiv/p/mongoose.html]
+    [mongo](http://www.cnblogs.com/zhongweiv/p/mongoose.html)
     redis 一个把结构化的数据放在内存中的一个存储系统，你可以把它作为数据库，缓存和消息中间件来使用
-    [https://redis.io/]
+    [redis](https://redis.io/)
     winston node.js日志库
-    [https://www.jianshu.com/p/e71f727c7b32]
+    [winston](https://www.jianshu.com/p/e71f727c7b32)
 
 ```
  > * 数据库
