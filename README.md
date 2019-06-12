@@ -22,7 +22,7 @@
     // mongo
     $ curl http://localhost:3000/api/v1/express/articles/1
     // mysql
-    $ curl http://localhost:3000/api/v1/express/articles/1
+    $ curl http://localhost:3000/api/v1/express/projects/1
 
 ```
 
