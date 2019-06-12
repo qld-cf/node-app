@@ -45,22 +45,45 @@ paths:
   /swagger:
     x-swagger-pipe: swagger_raw
 
-  /api/search/{keyword}:
+  /api/v1/express/articles/{id}:
     x-swagger-router-controller: article
     get:
       summary: Get
       description: >
         通用查询
-      operationId: getInfo
+      operationId: getArticleInfo
       parameters:
-        - name: keyword
+        - name: id
           in: path
-          description: 根据title查询文章
+          description: 根据id查询文章
           required: true
           type: string
       responses:
         "200":
           description: artitle
+          schema:
+            $ref: "#/definitions/SuccessResponse"
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+
+  /api/v1/express/projects/{id}:
+    x-swagger-router-controller: project
+    get:
+      summary: Get
+      description: >
+        通用查询
+      operationId: getProjectInfo
+      parameters:
+        - name: id
+          in: path
+          description: 根据id查询项目
+          required: true
+          type: string
+      responses:
+        "200":
+          description: project
           schema:
             $ref: "#/definitions/SuccessResponse"
         default:

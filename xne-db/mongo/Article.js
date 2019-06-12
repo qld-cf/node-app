@@ -2,7 +2,7 @@
  * Created by maple
  */
 var mongoose = require('mongoose');
-var db = require('../db');
+var db = require('./mongo');
 
 /**
  *  文章表:

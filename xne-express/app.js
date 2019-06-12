@@ -28,7 +28,7 @@ dict.init(dictFile);
 /**
  * 初始化数据库
  */
-var db = require('xne-db/db');
+var db = require('xne-db/mongo/mongo');
 // db.init(appConfig.mongo, dbCallback);
 db.init(appConfig.mongo);
 // db.init(appConfig.mongo, appConfig.cache);  //TODO  有用到redis再开启调试
@@ -58,7 +58,8 @@ SwaggerExpress.create(config, function(err, swaggerExpress) {
 
     if (swaggerExpress.runner.swagger.paths['/hello']) {
         console.log('\ntry this for swagger api docs:\ncurl http://127.0.0.1:' + port + '/api-docs/');
-        console.log('\ntry this for api test:\ncurl http://127.0.0.1:' + port + '/api/search/test');
+        console.log('\ntry this for api test:\ncurl mongoDB http://127.0.0.1:' + port + '/api/v1/express/articles/1');
+        console.log('\ntry this for api test:\ncurl Mysql http://127.0.0.1:' + port + '/api/v1/express/projects/1');
     }
 });
 

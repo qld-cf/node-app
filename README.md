@@ -1,41 +1,36 @@
- > * 环境安装
-```
-    node >= 8
-    mongodb
-    npm
-    脚手架内需要install和link,已写入bat和sh
-    windows：运行bat文件,先运行install文件后link
-    linux或macos： 进入目录，运行sh
-    first-run: ./npminstall.sh
-    next-run: ./npmlink.sh
-    （如果sh无法运行，需要更新权限chmod 777 ./xx.sh）
-```
+#### express版本的应用模板
 
- > * 运行
-```
-    全局安装pm2 : npm i pm2 -g
-    进入xne-express 运行start.bat或start.sh（可调整开发，生产环境和端口）
-    或者直接运行命令查看日志：
-    run：cd xne-express && pm2 start app.js --name xne-express --watch && pm2 log 
-    打开postman，run request: http://localhost:3000/api/search/test
+---
+- 包含mongoDB(mongoose)、Mysql(sequelize)、Redis、日志系统、PM2、本地framework模块封装、Swagger等模块，提供学习开发参考，助你快速构建rest api；
 
+ > 所需环境
+1.  node >= 8
+2. npm、mysql、mongodb、redis本地安装
 ```
-
- > * 脚手架介绍
-   
-   [swagger](https://swagger.io/)
-   [intro](https://www.jianshu.com/p/8ddd692af91f)
-   [express](https://expressjs.com/)
- 
-   [mongo](http://www.cnblogs.com/zhongweiv/p/mongoose.html)
-   [redis](https://redis.io/)
-   [winston](https://www.jianshu.com/p/e71f727c7b32)
-
- > * 数据库
-```
-    mongodb、mysql、redis
-    mongo初始表：article
-    mysql: 待添加
-    redis: 待添加
+    // 一键安装项目依赖：
+    $ ./npminstall.sh
+    $ ./npmlink.sh
+    //如果sh无法运行，需要更新权限
+    $ sudo chmod 777 ./xx.sh
+    // 全局安装pm2
+    $ npm i pm2 -g
+    // 启动服务
+    $ cd xne-express && pm2 start app.js --name xne-express --watch && pm2 log
+    // swagger自动生成api文档
+    $ http://127.0.0.1:3000/api-docs/
+    // 测试
+    // mongo
+    $ curl http://localhost:3000/api/v1/express/articles/1
+    // mysql
+    $ curl http://localhost:3000/api/v1/express/articles/1
 
 ```
+
+---
+
+[这里是koa2应用模板](https://github.com/qld-cf/koa2-app)
+
+
+
+
+

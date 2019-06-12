@@ -10,7 +10,7 @@ var cachegoose = require('xne-framework/vessel/mongoose-cache');
 /**
  * 初始化数据库
  */
-db.init = function(mongoConfig, redisConfig, callback) {
+db.init = (mongoConfig, redisConfig, callback) => {
     if (redisConfig) {
         cachegoose(mongoose, redisConfig);
     }

@@ -1,6 +1,6 @@
-const winston = require('winston');
-var moment = require('moment');
-require('winston-daily-rotate-file'); 
+const winston = require('../../node_modules/winston');
+var moment = require('../../node_modules/moment/moment');
+require('winston-daily-rotate-file');
 
 function winstonServer(logConfig,name) {
     let self = this;
@@ -87,7 +87,7 @@ winstonServer.prototype.initWinston = function () {
         ],
     });
     winston.loggers.add('kafka', {
-        transports: [ 
+        transports: [
             serviceTransportFile('kafka')
         ],
     });
@@ -97,7 +97,7 @@ winstonServer.prototype.initWinston = function () {
     self.debugLog = winston.loggers.get('debug');
     self.warnLog = winston.loggers.get('warn');
     self.kafkaLog = winston.loggers.get('kafka');
-  
+
 }
 
 winstonServer.prototype.error = function (args) {
@@ -136,7 +136,7 @@ winstonServer.prototype.log = function (level, args) {
         return self.debugLog.debug(args);
     } else if (level === 'warn') {
         return self.warnLog.warn(args);
-    } 
+    }
 };
 module.exports = winstonServer;
 
