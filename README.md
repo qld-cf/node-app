@@ -1,7 +1,7 @@
 #### express版本的应用模板
 
 ---
-- 包含mongoDB(mongoose)、Mysql(sequelize)、Redis、日志系统、PM2、本地framework模块封装、Swagger等模块，提供学习开发参考，助你快速构建rest api；（感觉这版有点旧了）
+- 包含mongoDB(mongoose)、Mysql(sequelize)、Redis、日志系统、PM2、本地framework模块封装、Swagger等模块，提供学习开发参考，助你快速构建rest api；（旧）
 
  > 所需环境
 1.  node >= 8
