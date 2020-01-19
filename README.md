@@ -33,9 +33,6 @@
 ---
 [React应用模板](https://github.com/qld-cf/react-ts-template)
 
-#### TODO:
-- 添加vue3和angular8版本
-
 
 
 
